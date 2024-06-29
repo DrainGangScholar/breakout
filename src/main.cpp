@@ -1,5 +1,8 @@
-#include <cstdio>
+#include "../include/Utility.h"
+#include "../include/Game.h"
+#include "../include/ResourceManager.h"
+
 int main() {
-  printf("Hello, world\n");
+  Game game = Game(600, 400);
   return 0;
 }

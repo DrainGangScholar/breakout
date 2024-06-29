@@ -1,11 +1,8 @@
-#ifndef SHADER_H
-#define SHADER_H
+#pragma once
 
-#include "glad/glad.h"
+#include "Utility.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#include <iostream>
-#include <string>
 
 class Shader {
 public:
@@ -37,5 +34,3 @@ public:
 private:
   void checkCompilerErrors(unsigned int object, std::string type);
 };
-
-#endif

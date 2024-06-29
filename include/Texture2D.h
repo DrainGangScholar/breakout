@@ -1,6 +1,7 @@
-#ifndef TEXTURE2D_H
-#define TEXTURE2D_H
-#include "glad/glad.h"
+#pragma once
+
+#include "Utility.h"
+
 class Texture2D {
 public:
   unsigned int ID;
@@ -16,7 +17,6 @@ public:
   Texture2D();
 
 public:
-  void Generate(unsigned int width, unsigned int height, char *data);
+  void Generate(unsigned int width, unsigned int height, unsigned char *data);
   void Bind() const;
 };
-#endif

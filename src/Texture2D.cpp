@@ -1,5 +1,4 @@
 #include "../include/Texture2D.h"
-#include <GL/gl.h>
 
 Texture2D::Texture2D() {
   this->Width = 0;

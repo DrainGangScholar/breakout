@@ -1,8 +1,8 @@
+#pragma once
 #ifndef GAME_H
 #define GAME_H
 
 #include "GLFW/glfw3.h"
-#include "Utility.h"
 
 enum GameState { GAME_ACTIVE, GAME_MENU, GAME_WIN };
 class Game {
