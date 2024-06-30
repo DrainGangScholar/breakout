@@ -1,6 +1,7 @@
-#pragma once
-
-#include "Utility.h"
+#ifndef SHADER_HPP
+#define SHADER_HPP
+#include "../include/glad/glad.h"
+#include "AUtility.hpp"
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
@@ -34,3 +35,4 @@ public:
 private:
   void checkCompilerErrors(unsigned int object, std::string type);
 };
+#endif

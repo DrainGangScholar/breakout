@@ -1,4 +1,4 @@
-#include "../include/Texture2D.h"
+#include "../include/Texture2D.hpp"
 
 Texture2D::Texture2D() {
   this->Width = 0;
@@ -11,7 +11,8 @@ Texture2D::Texture2D() {
   this->Filter_Max = GL_LINEAR;
   glGenTextures(1, &this->ID);
 }
-void Texture2D::Generate(unsigned int width, unsigned int height, char *data) {
+void Texture2D::Generate(unsigned int width, unsigned int height,
+                         unsigned char *data) {
   this->Width = width;
   this->Height = height;
 

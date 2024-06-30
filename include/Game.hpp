@@ -1,7 +1,5 @@
-#pragma once
-#ifndef GAME_H
-#define GAME_H
-
+#ifndef GAME_HPP
+#define GAME_HPP
 #include "GLFW/glfw3.h"
 
 enum GameState { GAME_ACTIVE, GAME_MENU, GAME_WIN };

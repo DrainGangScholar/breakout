@@ -1,4 +1,6 @@
-#pragma once
+#ifndef RESOURCEMANAGER_HPP
+#define RESOURCEMANAGER_HPP
+// #include "../include/glad/glad.h"
 #include "Shader.hpp"
 #include "Texture2D.hpp"
 #include <map>
@@ -25,3 +27,4 @@ private:
 
   static Texture2D loadTextureFromFile(const char *file, bool alpha);
 };
+#endif

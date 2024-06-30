@@ -1,4 +1,5 @@
-#include "../include/ResourceManager.h"
+#include "../include/ResourceManager.hpp"
+#define STB_IMAGE_IMPLEMENTATION
 #include "../include/stb_image/stb_image.h"
 #include <exception>
 #include <fstream>
@@ -31,8 +32,9 @@ void ResourceManager::Clear() {
   }
 }
 
-Shader loadShaderFromFile(const char *vShaderFile, const char *fShaderFile,
-                          const char *gShaderFile) {
+Shader ResourceManager::loadShaderFromFile(const char *vShaderFile,
+                                           const char *fShaderFile,
+                                           const char *gShaderFile) {
   std::string vertexCode;
   std::string fragmentCode;
   std::string geometryCode;

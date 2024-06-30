@@ -1,6 +1,6 @@
-#include "../include/Game.h"
+#include "../include/Game.hpp"
 
-Game::Game(uint width, uint height) {
+Game::Game(unsigned int width, unsigned int height) {
   this->State = GAME_ACTIVE;
   this->Width = width;
   this->Height = height;

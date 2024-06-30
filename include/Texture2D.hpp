@@ -1,6 +1,7 @@
-#pragma once
-
-#include "Utility.h"
+#ifndef TEXTURE2D_HPP
+#define TEXTURE2D_HPP
+#include "../include/glad/glad.h"
+#include "AUtility.hpp"
 
 class Texture2D {
 public:
@@ -20,3 +21,4 @@ public:
   void Generate(unsigned int width, unsigned int height, unsigned char *data);
   void Bind() const;
 };
+#endif
